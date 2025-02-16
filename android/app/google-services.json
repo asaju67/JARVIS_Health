@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "974236402882",
+    "project_id": "jarvis-health-25",
+    "storage_bucket": "jarvis-health-25.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974236402882:android:93d28f8a0eedd4371ba75b",
+        "android_client_info": {
+          "package_name": "com.mycompany.jarvishealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDK-WxEevlaWu2K4IB8EI0hbm6JiX9Hy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
