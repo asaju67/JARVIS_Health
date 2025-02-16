@@ -619,15 +619,12 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                                       child: Padding(
                                         padding: EdgeInsets.all(10.0),
                                         child: Text(
-                                          valueOrDefault<String>(
-                                            FFAppState().teamInsights,
-                                            'No insights found. Good to go!',
-                                          ),
+                                          'Clint and Sam might be running on empty and Tony could use more rest to stay sharp. A bit more rest for the team could improve their mission-readiness!',
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
                                                 fontFamily: 'Courier Prime',
-                                                fontSize: 22.0,
+                                                fontSize: 26.0,
                                                 letterSpacing: 0.0,
                                                 lineHeight: 1.5,
                                               ),
@@ -649,7 +646,7 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                       padding: EdgeInsets.all(10.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             height: 629.29,
@@ -665,13 +662,13 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                                   flex: 7,
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsets.all(12.0),
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 20.0, 0.0, 0.0),
                                         child: Container(
-                                          height: 70.0,
+                                          height: 79.27,
                                           constraints: BoxConstraints(
                                             minHeight: 40.0,
                                           ),
@@ -716,7 +713,7 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                                                         .override(
                                                           fontFamily:
                                                               'Courier Prime',
-                                                          fontSize: 22.0,
+                                                          fontSize: 26.0,
                                                           letterSpacing: 0.0,
                                                           lineHeight: 1.5,
                                                         ),
@@ -726,87 +723,36 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                                         ),
                                       ),
                                       Container(
-                                        width: 592.5,
-                                        height: 26.18,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryBackground,
-                                        ),
-                                      ),
-                                      Container(
+                                        width:
+                                            MediaQuery.sizeOf(context).width *
+                                                1.0,
                                         decoration: BoxDecoration(),
                                         child: Align(
                                           alignment:
                                               AlignmentDirectional(0.0, 0.0),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 30.0, 0.0, 0.0),
-                                            child: Text(
-                                              'Guidance',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .displayMedium
-                                                      .override(
-                                                        fontFamily: 'Avengance',
-                                                        fontSize: 40.0,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
+                                          child: Text(
+                                            'No mistakes. No hesitations.\nMake every second count.',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelLarge
+                                                .override(
+                                                  fontFamily: 'Courier Prime',
+                                                  fontSize: 32.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w600,
+                                                  shadows: [
+                                                    Shadow(
+                                                      color: Color(0x66A5B0BE),
+                                                      offset: Offset(3.0, 3.0),
+                                                      blurRadius: 5.0,
+                                                    )
+                                                  ],
+                                                  lineHeight: 1.5,
+                                                ),
                                           ),
                                         ),
                                       ),
-                                      Container(
-                                        width: double.infinity,
-                                        height: 129.71,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                        ),
-                                        alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
-                                              child: Container(
-                                                width:
-                                                    MediaQuery.sizeOf(context)
-                                                            .width *
-                                                        1.0,
-                                                decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                ),
-                                                child: Padding(
-                                                  padding: EdgeInsets.all(10.0),
-                                                  child: Text(
-                                                    valueOrDefault<String>(
-                                                      FFAppState().teamInsights,
-                                                      'No insights found. Good to go!',
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Courier Prime',
-                                                          fontSize: 22.0,
-                                                          letterSpacing: 0.0,
-                                                          lineHeight: 1.5,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
+                                    ].divide(SizedBox(height: 25.0)),
                                   ),
                                 ),
                                 Expanded(
@@ -913,13 +859,13 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                           ),
                           Container(
                             width: 670.3,
-                            height: 214.78,
+                            height: 270.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: EdgeInsets.all(4.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10.0),
                                 child: Image.asset(
@@ -927,33 +873,6 @@ class _BeforeMissionWidgetState extends State<BeforeMissionWidget> {
                                   width: MediaQuery.sizeOf(context).width * 1.0,
                                   fit: BoxFit.cover,
                                 ),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            width: MediaQuery.sizeOf(context).width * 1.0,
-                            decoration: BoxDecoration(),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Text(
-                                'No mistakes. No hesitations.\nMake every second count.',
-                                textAlign: TextAlign.center,
-                                style: FlutterFlowTheme.of(context)
-                                    .labelLarge
-                                    .override(
-                                      fontFamily: 'Courier Prime',
-                                      fontSize: 20.0,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w600,
-                                      shadows: [
-                                        Shadow(
-                                          color: Color(0x66A5B0BE),
-                                          offset: Offset(3.0, 3.0),
-                                          blurRadius: 5.0,
-                                        )
-                                      ],
-                                      lineHeight: 1.5,
-                                    ),
                               ),
                             ),
                           ),
